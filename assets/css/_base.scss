@@ -1,0 +1,29 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    background: $body-color;
+}
+
+.form-select:focus,
+.form-control:focus {
+    box-shadow: none
+}
+
+.success-href {
+    color: #16C098;
+}
+
+.text-succe {
+    color: #00AC4F;
+}
+
+.text-dangers {
+    color: #D0004B;
+}
+
+.active>.page-link,
+.page-link.active {
+    color: $white !important;
+}

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/images/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./package/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="sidebar d-flex flex-column justify-content-between py-4 px-3" id="sidebar">
+        <div>
+            <!-- Logo -->
+            <div class="d-flex align-items-center  mb-4 logo">
+                <img src="./assets/images/logo.png" class="me-2" alt="image" id="toggleSidebar">
+                <h5 class="mb-0 fw-bold">Dashboard <small class="version">v.01</small></h5>
+            </div>
+
+            <!-- Menu -->
+            <ul class="nav flex-column gap-3">
+                <li class="nav-item d-flex align-items-center gap-2 ">
+                    <img src="./assets/images/key-square.png" alt="image">
+                    <span>Dashboard</span>
+                </li>
+                <li class="nav-item d-flex align-items-center justify-content-between ">
+                    <div class="d-flex align-items-center gap-2">
+                        <img src="./assets/images/3d-square 1.png" alt="image"> <span>Product</span>
+                    </div>
+                    <i class="bi bi-chevron-right small"></i>
+                </li>
+                <li class="nav-item d-flex align-items-center justify-content-between active">
+                    <div class="d-flex align-items-center gap-2">
+                        <img src="./assets/images/user-square 1.png" alt="image"> <span>Customers</span>
+                    </div>
+                    <i class="bi bi-chevron-right small"></i>
+                </li>
+                <li class="nav-item d-flex align-items-center justify-content-between ">
+                    <div class="d-flex align-items-center gap-2">
+                        <img src="./assets/images/wallet-money 2.png" alt="image"> <span>Income</span>
+                    </div>
+                    <i class="bi bi-chevron-right small"></i>
+                </li>
+                <li class="nav-item d-flex align-items-center justify-content-between ">
+                    <div class="d-flex align-items-center gap-2">
+                        <img src="./assets/images/discount-shape 1.png" alt="image"> <span>Promote</span>
+                    </div>
+                    <i class="bi bi-chevron-right small"></i>
+                </li>
+                <li class="nav-item d-flex align-items-center justify-content-between ">
+                    <div class="d-flex align-items-center gap-2">
+                        <img src="./assets/images/message-question 1.png" alt="image"> <span>Help</span>
+                    </div>
+                    <i class="bi bi-chevron-right small"></i>
+                </li>
+            </ul>
+        </div>
+
+        <!-- CTA Card -->
+        <div class="upgrade-card text-center">
+            <p class="mb-3 text-white small">Upgrade to PRO to get access all Features!</p>
+            <a href="#" class="btn btn-light btn-sm fw-semibold rounded-pill">Get Pro Now!</a>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="content w-100">
+        <div class="container py-4">
+            <div class="greeting-bar d-flex justify-content-between align-items-center mb-4">
+                <h5 class="fw-semibold">Hello Evano <span>👋🏼</span>,</h5>
+                <div class="search-box d-flex align-items-center px-3">
+                    <i class="bi bi-search text-muted me-2"></i>
+                    <input type="text" class="form-control border-0 shadow-none" placeholder="Search" />
+                </div>
+            </div>
+            <!-- Overview Cards -->
+            <div class="stats-card d-flex justify-content-around align-items-center mb-4">
+                <!-- Total Customers -->
+                <div class="stat-item d-flex align-items-center">
+                    <img src="./assets/images/icon1.png" alt="icon1" class="me-2">
+                    <div>
+                        <p class="mb-1 small">Total Customers</p>
+                        <h3 class="mb-1 fw-semibold">5,423</h3>
+                        <p class="lineof  mb-0 d-flex align-items-center">
+                            <span class="text-succe d-flex align-items-center me-1">
+                                <i class="bi bi-arrow-up-short fs-4"></i>
+                                18%
+                            </span>
+                            this month
+                        </p>
+                    </div>
+                </div>
+                <div class="vr"></div>
+
+                <!-- Members -->
+                <div class="stat-item d-flex align-items-center">
+                    <img src="./assets/images/icon2.png" alt="icon" class="me-2">
+
+                    <div>
+                        <p class="mb-1 small">Members</p>
+                        <h3 class="mb-1 fw-semibold">1,893</h3>
+                        <p class="lineof mb-0 d-flex align-items-center ">
+                            <span class="text-dangers d-flex align-items-center me-1">
+                                <i class="bi bi-arrow-down-short fs-4"></i>
+                                1%
+                            </span>this month
+                        </p>
+                    </div>
+                </div>
+                <div class="vr"></div>
+
+                <!-- Active Now -->
+                <div class="stat-item d-flex align-items-center">
+                    <img src="./assets/images/icon3.png" alt="icon" class="me-2">
+
+                    <div>
+                        <p class="mb-1 small">Active Now</p>
+                        <h3 class="mb-1 fw-semibold">189</h3>
+                        <div class="avatar-group d-flex">
+                            <img src="https://i.pravatar.cc/24?img=1" class="avatar rounded-circle" />
+                            <img src="https://i.pravatar.cc/24?img=2" class="avatar rounded-circle" />
+                            <img src="https://i.pravatar.cc/24?img=3" class="avatar rounded-circle" />
+                            <img src="https://i.pravatar.cc/24?img=4" class="avatar rounded-circle" />
+                            <img src="https://i.pravatar.cc/24?img=5" class="avatar rounded-circle" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Table Section -->
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-3 ">
+                        <div>
+                            <h4 class="fw-semibold">All Customers</h5>
+                                <a href="#" class="success-href text-decoration-none">Active Members</a>
+                        </div>
+                        <div class="d-flex gap-2 w-50 justify-content-end">
+                            <div class="search-box d-flex align-items-center px-3 shadow-none"
+                                style="background: #F9FBFF;">
+                                <i class="bi bi-search text-muted me-2"></i>
+                                <input type="text" class="form-control border-0 shadow-none" placeholder="Search"
+                                    style="background: #F9FBFF;" />
+                            </div>
+                            <div class="selctdiv">
+                                <label for="sortSelect" class="form-label mb-0">Sort by :</label>
+                                <select id="sortSelect" class="form-select ">
+                                    <option value="newest">Newest</option>
+                                    <option value="oldest">Oldest</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle">
+                            <thead>
+                                <tr>
+                                    <th>Customer Name</th>
+                                    <th>Company</th>
+                                    <th>Phone Number</th>
+                                    <th>Email</th>
+                                    <th>Country</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Jane Cooper</td>
+                                    <td>Microsoft</td>
+                                    <td>(225) 555-0118</td>
+                                    <td>jane@microsoft.com</td>
+                                    <td>United States</td>
+                                    <td><span class="badge-success">Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Floyd Miles</td>
+                                    <td>Yahoo</td>
+                                    <td>(205) 555-0100</td>
+                                    <td>floyd@yahoo.com</td>
+                                    <td>Kiribati</td>
+                                    <td><span class="badge-danger">Inactive</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Ronald Richards</td>
+                                    <td>Adobe</td>
+                                    <td>(302) 555-0107</td>
+                                    <td>ronald@adobe.com</td>
+                                    <td>Israel</td>
+                                    <td><span class="badge-danger">Inactive</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Marvin McKinney</td>
+                                    <td>Tesla</td>
+                                    <td>(252) 555-0126</td>
+                                    <td>marvin@tesla.com</td>
+                                    <td>Iran</td>
+                                    <td><span class="badge-success">Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Jerome Bell</td>
+                                    <td>Google</td>
+                                    <td>(629) 555-0129</td>
+                                    <td>jerome@google.com</td>
+                                    <td>Réunion</td>
+                                    <td><span class="badge-success">Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Kathryn Murphy</td>
+                                    <td>Microsoft</td>
+                                    <td>(406) 555-0120</td>
+                                    <td>kathryn@microsoft.com</td>
+                                    <td>Curaçao</td>
+                                    <td><span class="badge-success">Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Jacob Jones</td>
+                                    <td>Yahoo</td>
+                                    <td>(208) 555-0112</td>
+                                    <td>jacob@yahoo.com</td>
+                                    <td>Brazil</td>
+                                    <td><span class="badge-success">Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Kristin Watson</td>
+                                    <td>Facebook</td>
+                                    <td>(704) 555-0127</td>
+                                    <td>kristin@facebook.com</td>
+                                    <td>Åland Islands</td>
+                                    <td><span class="badge-danger">Inactive</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <span class="spanpag">Showing data 1 to 8 of 256K entries</span>
+                        <nav>
+                            <ul class="pagination mb-0">
+                                <li class="page-item"><a class="page-link" href="#">‹</a></li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item bg-white"><a class="page-link bg-white" href="#">...</a></li>
+                                <li class="page-item"><a class="page-link" href="#">40</a></li>
+                                <li class="page-item"><a class="page-link" href="#">></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.js"></script>
+    <script src="./package/bootstrap.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

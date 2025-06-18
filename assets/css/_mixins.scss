@@ -1,0 +1,14 @@
+@mixin widthbadge {
+    border-radius: 4px;
+    padding: 4px 0;
+    display: block;
+    width: 80px;
+    text-align: center;
+}
+
+@mixin stylecard {
+    box-shadow: $shadowmain !important;
+    border-color: #F0F0F0;
+    background-color: $white;
+    border-radius: 30px;
+}
